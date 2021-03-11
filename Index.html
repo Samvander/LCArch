@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ATELIER DU GOUPIL</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="intro" class="view">
+      <div class="full-bg-image"></div>
+    </div>
+    <!-- first row after hero -->
+    <div class="container-fluid">
+      <div class="row">
+        <ul class="nav flex-column offset md-1" id="sidenav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#imgslider">Projets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#temoignage">Temoignage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="jumbotron jumbotron-fluid col-9" id="jumbotron">
+          <div class="container">
+            <h1 class="display-4">ATELIER DU GOUPIL</h1>
+            <p class="lead">
+              BÂTIS ANCIENS <br />
+
+              CONSTRUCTIONS ÉCOLOGIQUES <br />
+
+              CHANTIERS PARTICIPATIFS <br />
+
+              AIDE À L'AUTO-CONSTRUCTION <br />
+            </p>
+          </div>
+        </div>
+        <img src="croppedlogo.png" width="200" height="200" class="logo" />
+      </div>
+    </div>
+    <!-- second row/sliders -->
+    <div class="container fluid ">
+      <div class="row">
+        <div class="wrapper col-10 d-flex justify-content-center">
+          <div class="images">
+            <div class="img-1"></div>
+            <div class="img-2"></div>
+          </div>
+          <div class="slider" id="imgslider">
+            <div class="drag-line">
+              <span></span>
+            </div>
+            <input type="range" min="0" max="100" value="50">
+          </div>
+        </div>
+    
+        <script>
+          const slider = document.querySelector(".slider input");
+          const img = document.querySelector(".images .img-2");
+          const dragLine = document.querySelector(".slider .drag-line");
+          slider.oninput = ()=>{
+            let sliderVal = slider.value;
+            dragLine.style.left = sliderVal + "%";
+            img.style.width = sliderVal + "%";
+          }
+        </script>
+    <div class="container">
+
+        <p class="text">Avant et apres un projet de six mois vers Loubens-Lauragais‎‎</p>
+        <br>
+        <br>
+      
+    <!-- Third row, temoignage -->
+    <div class="container">
+      <div class="row" id="temoignage">
+        <p>Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+          Temoignage goes here <br>
+        </p>
+      </div>
+
+      
+
+    <script src="" async defer></script>
+  </body>
+  <div class="footer"></div>
+</html>
